@@ -5,12 +5,12 @@ import 'firebase/firestore';
 import "firebase/functions";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAGYk9DNtR5O2tUnIMo6o6TqbD3ZU_G8mI",
-  authDomain: "vibefam-activity.firebaseapp.com",
-  projectId: "vibefam-activity",
-  storageBucket: "vibefam-activity.appspot.com",
-  messagingSenderId: "866484755711",
-  appId: "1:866484755711:web:5826ad0d7d1d41eda0c0ca"
+    apiKey: process.env.APIKEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID
 };
 
 const app = firebase.initializeApp(firebaseConfig);
